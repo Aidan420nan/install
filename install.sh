@@ -19,7 +19,7 @@ then
   abort "Bash is required to interpret this script."
 fi
 
-# Check if script is run with force-interactive mode in CI
+# Check if the script is run with force-interactive mode in CI
 if [[ -n "${CI-}" && -n "${INTERACTIVE-}" ]]
 then
   abort "Cannot run force-interactive mode in CI."
